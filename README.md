@@ -20,22 +20,6 @@ con un numero limitato di vite. Sono previsti tre livelli di difficoltà.
 </tr>
 </table>
 
-## Come è nato il progetto
-
-Il gioco non è stato scritto a mano: è il risultato di **20 prompt**
-inviati in sequenza al modello, applicando il prompt engineering in modo
-iterativo.
-
-1. **Prompt 1–2 – enigmi.** Il modello progetta i tre enigmi, gli oggetti e
-   l'indizio sull'ordine delle cifre, in formato JSON (`codice/enigmi.json`).
-2. **Prompt 3 – prima versione.** Il modello scrive il gioco di base a
-   partire dal file degli enigmi.
-3. **Prompt 4–20 – modifiche.** Ogni richiesta parte dalla versione
-   precedente, corregge un problema o aggiunge una funzionalità
-
-Dopo ogni prompt la versione ottenuta è stata salvata ed eseguita: in questo
-modo il repository mostra come il gioco è cambiato richiesta dopo richiesta.
-
 ## Organizzazione del repository
 
 ```
@@ -78,12 +62,6 @@ escape-room-laboratorio-aurora/
 | 19 | Grafica della schermata iniziale | `codice/prompt19.py` |
 | 20 | Ritorno alla schermata iniziale | `codice/prompt20.py` |
 
-Note:
-
-- `prompt08.py` ha il tempo limite a 10 secondi invece di 10 minuti: è un
-  valore usato per provare la sconfitta allo scadere del tempo.
-- `prompt10.py` contiene già anche le attese dei Prompt 11 e 12: le versioni
-  sono state salvate in un ordine diverso da quello delle richieste.
 
 ## Requisiti
 
