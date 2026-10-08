@@ -31,8 +31,7 @@ iterativo.
 2. **Prompt 3 – prima versione.** Il modello scrive il gioco di base a
    partire dal file degli enigmi.
 3. **Prompt 4–20 – modifiche.** Ogni richiesta parte dalla versione
-   precedente, corregge un problema o aggiunge una funzionalità e chiede di
-   lasciare invariato il resto.
+   precedente, corregge un problema o aggiunge una funzionalità
 
 Dopo ogni prompt la versione ottenuta è stata salvata ed eseguita: in questo
 modo il repository mostra come il gioco è cambiato richiesta dopo richiesta.
@@ -56,29 +55,6 @@ escape-room-laboratorio-aurora/
     ├── prompt01_1.png        # schermate, numerate come i prompt
     └── …
 ```
-
-**`gen_ai.ipynb`** è il punto di partenza. Per ogni prompt riporta:
-
-- il motivo della richiesta, cioè quale problema della versione precedente
-  si voleva risolvere;
-- il testo esatto inviato al modello;
-- il file con il codice ottenuto;
-- due schermate del risultato, affiancate;
-- una cella che avvia quella versione del gioco.
-
-**`codice/`** contiene una versione del gioco per ogni prompt. Il numero nel
-nome del file è il numero del prompt che l'ha prodotta: `prompt07.py` è il
-codice ottenuto con il Prompt 7. Ogni file è un programma completo e
-indipendente, che legge `enigmi.json` dalla stessa cartella. Fanno eccezione:
-
-- `prompt16_prima_versione.py`: primo tentativo del Prompt 16 (emoji),
-  corretto in `prompt16.py`;
-- `prompt17_18.py`: i Prompt 17 (notifiche a fumetto) e 18 (schermata
-  iniziale) sono stati salvati in un unico file.
-
-**`img/`** contiene le schermate. `promptNN_1.png` e `promptNN_2.png` sono le
-due immagini del Prompt NN.
-
 ### Elenco dei prompt
 
 | Prompt | Richiesta | File |
