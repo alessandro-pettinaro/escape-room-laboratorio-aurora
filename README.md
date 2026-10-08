@@ -123,13 +123,6 @@ esempio `python3 codice/prompt09.py`.
    `avvia("codice/prompt20.py")`. Il gioco si apre in una finestra
    separata.
 
-## Comandi di gioco
-
-| Tasto | Azione |
-|---|---|
-| Frecce | Muovono il giocatore |
-| E | Interagisce con l'oggetto o la porta adiacente |
-
 ## Autori
 
 Valeria Cannone, Alessandro Pettinaro, Giada Remedia
