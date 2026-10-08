@@ -1,0 +1,5 @@
+# Il gioco usa solo la libreria standard di Python (>= 3.10) e Tkinter.
+# Tkinter non si installa con pip: vedi la sezione "Requisiti" del README.
+#
+# Le dipendenze seguenti servono solo per aprire il notebook gen_ai.ipynb.
+notebook>=7.0
