@@ -1,0 +1,99 @@
+{
+  "titolo": "Laboratorio Aurora",
+  "indizio_ordine": {
+    "oggetto": "Poster del protocollo di emergenza",
+    "testo_giocatore": "Prima osserva. Poi misura. Infine conserva.",
+    "soluzione": "I tre verbi rimandano, nell'ordine, al microscopio, alla bilancia e al congelatore. Le cifre ottenute seguono questo ordine."
+  },
+  "enigmi": [
+    {
+      "id": "osserva",
+      "nome": "Il vetrino incompleto",
+      "testo_giocatore": {
+        "oggetto_principale": "Microscopio",
+        "secondo_oggetto": null,
+        "oggetto_da_raccogliere": {
+          "nome": "Vetrino trasparente",
+          "uso_per_sbloccare": "Senza il vetrino non c'è nulla da osservare al microscopio."
+        },
+        "indizi": [
+          {
+            "quando": "prima di osservare il vetrino",
+            "testo": "Un'etichetta sul microscopio dice: «Annota quanti campioni sono presenti sul vetrino»."
+          },
+          {
+            "quando": "dopo aver osservato il vetrino al microscopio",
+            "testo": "Sul vetrino si distingue una griglia quadrata di tre alloggiamenti per lato. La fila superiore è piena; nella fila centrale è vuoto solo l'alloggiamento centrale; nella fila inferiore è vuoto solo quello a destra."
+          }
+        ]
+      },
+      "soluzione": {
+        "azione": "Raccogliere il vetrino, osservarlo al microscopio e contare gli alloggiamenti occupati.",
+        "cifra_ottenuta": 7,
+        "spiegazione": "La griglia ha tre file di tre alloggiamenti. La prima fila contiene tre campioni e le altre due ne contengono due ciascuna: in totale sono sette."
+      }
+    },
+    {
+      "id": "misura",
+      "nome": "I piatti da pareggiare",
+      "testo_giocatore": {
+        "oggetto_principale": "Bilancia a due piatti",
+        "secondo_oggetto": "Taccuino appeso alla parete",
+        "oggetto_da_raccogliere": {
+          "nome": "Pinza isolante",
+          "uso_per_sbloccare": "Permette di aprire la protezione della bilancia e spostare i piccoli pesi."
+        },
+        "indizi": [
+          {
+            "quando": "prima di usare la pinza isolante",
+            "testo": "La protezione opaca della bilancia è chiusa: i piatti e i pesi non sono visibili."
+          },
+          {
+            "quando": "dopo aver usato la pinza isolante",
+            "testo": "A protezione aperta, si vedono pesi da un grammo: due sul piatto sinistro e otto su quello destro."
+          },
+          {
+            "quando": "leggendo il taccuino",
+            "testo": "«Per la misura di sicurezza, sposta peso dal piatto più carico all'altro finché i due piatti sono uguali. Registra quanto hai spostato»."
+          }
+        ]
+      },
+      "soluzione": {
+        "azione": "Usare la pinza isolante per aprire la protezione e spostare tre pesi dal piatto destro al sinistro, portando entrambi a cinque grammi.",
+        "cifra_ottenuta": 3,
+        "spiegazione": "La differenza iniziale è di sei grammi. Ogni grammo trasferito riduce la differenza di due grammi, quindi ne vanno spostati tre."
+      }
+    },
+    {
+      "id": "conserva",
+      "nome": "Il campione stabile",
+      "testo_giocatore": {
+        "oggetto_principale": "Congelatore dei campioni",
+        "secondo_oggetto": null,
+        "oggetto_da_raccogliere": {
+          "nome": "Batteria di riserva",
+          "uso_per_sbloccare": "Alimenta i display spenti del congelatore, rendendo leggibili le temperature."
+        },
+        "indizi": [
+          {
+            "quando": "prima di inserire la batteria",
+            "testo": "Il congelatore contiene tre contenitori con sigilli numerati 4, 6 e 9. I display delle temperature sono spenti."
+          },
+          {
+            "quando": "dopo aver inserito la batteria",
+            "testo": "I display dei contenitori con sigilli 4, 6 e 9 mostrano rispettivamente −1, −3 e −5 gradi."
+          },
+          {
+            "quando": "leggendo il coperchio",
+            "testo": "«Salva il campione che non è né il più freddo né il più caldo. La cifra è il numero del suo sigillo»."
+          }
+        ]
+      },
+      "soluzione": {
+        "azione": "Inserire la batteria nel congelatore, confrontare le temperature e selezionare il contenitore a −3 gradi, con il sigillo 6.",
+        "cifra_ottenuta": 6,
+        "spiegazione": "Fra −1, −3 e −5 gradi, la temperatura intermedia è −3 gradi. Il contenitore corrispondente ha il sigillo 6."
+      }
+    }
+  ]
+}
