@@ -2,7 +2,7 @@
 
 Escape room in Python con interfaccia grafica Tkinter, sviluppata
 interamente tramite prompt a ChatGPT (GPT-5.6 Sol) per il corso di
-**Intelligenza Artificiale Generativa** (Università Politecnica delle
+**Data Scienze** (Università Politecnica delle
 Marche, A.A. 2025-2026).
 
 Il giocatore esplora una stanza a griglia, raccoglie oggetti e risolve tre
