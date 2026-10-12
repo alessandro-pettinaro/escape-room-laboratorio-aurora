@@ -1033,11 +1033,12 @@ def mostra_schermata_iniziale(radice, dati):
     elenco_regole = tk.Frame(contenuto, bg="#101820")
     elenco_regole.grid(row=5, column=0, sticky="w", pady=(0, 17))
     for indice, regola in enumerate((
-        "Esplora la stanza",
-        "Raccogli gli oggetti",
-        "Risolvi i tre enigmi",
-        "Apri la porta con le cifre ottenute",
-        "Dopo ogni errore attendi 30 secondi",
+            "Esplora la stanza",
+            "Raccogli gli oggetti",
+            "Risolvi i tre enigmi",
+            "Apri la porta con le cifre ottenute",
+            "Ogni enigma sbagliato costa una vita",
+            "Dopo un enigma sbagliato attendi 30 secondi",
     )):
         tk.Label(
             elenco_regole, text="•  " + regola, font=("Arial", 12),
